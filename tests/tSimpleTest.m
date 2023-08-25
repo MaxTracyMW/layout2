@@ -6,7 +6,7 @@ classdef tSimpleTest < glttestutilities.TestInfrastructure
 
             ConstructorName = 'uiextras.BoxPanel'; % doesnt matter choosing 'uiextras.BoxPanel' or 'uix.BoxPanel'
 
-            % Create the component.
+            % Create the component.  
             component = testCase.constructComponent(ConstructorName); 
 
             % Create an invisible control 
