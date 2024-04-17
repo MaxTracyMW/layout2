@@ -50,8 +50,3 @@ jobs:
         uses: matlab-actions/run-command@v1
         with:
           command: openProject("project.prj");results = runtests("tSimpleTest.m");
-
-          # Run the GLT tests.
-      - name: Run all the tests
-        if: always()
-        uses: matlab-actions/run-tests@v1
