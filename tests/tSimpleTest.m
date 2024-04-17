@@ -10,7 +10,7 @@ classdef tSimpleTest < glttestutilities.TestInfrastructure
             component = testCase.constructComponent(ConstructorName); 
 
             % Create an invisible control 
-            button = uicontrol( 'Parent', [], 'Visible', 'off' );
+            button = uicontrol( 'Parent', []);
             testCase.addTeardown( @() delete( button ) )
        
         end 
