@@ -10,7 +10,8 @@ classdef tSimpleTest < glttestutilities.TestInfrastructure
             component = testCase.constructComponent(ConstructorName); 
 
             % Create an invisible control 
-            screenDPI = get(groot, 'ScreenPixelsPerInch');
+            disp("DPI Value");
+            screenDPI = get(groot, 'ScreenPixelsPerInch')
             button = uicontrol( 'Parent', []);
             testCase.addTeardown( @() delete( button ) )
        
