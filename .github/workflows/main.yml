@@ -28,7 +28,7 @@ jobs:
         os: [ubuntu-latest]
 
         # List of MATLAB releases over which to run the tests.
-        matlab-version: [R2023b]
+        matlab-version: [R2023a]
     
     # Specify the runner that the job will run on.
     runs-on: ${{ matrix.os }}
